@@ -1,0 +1,142 @@
+body {
+	background-image: url(./img/back.webp);
+	background-position: left bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.App {
+	color: #3833a0;
+	max-width: 100%;
+	font-family: 'Mali', cursive;
+}
+
+.Header {
+	text-align: center;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
+	background-color: rgb(200, 221, 239);
+
+}
+
+.Main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 125px;
+}
+
+.Maine-List {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+
+.Episode-List-Item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+
+.Characters-List {
+	position: relative;
+	width: 150px;
+
+}
+
+.Characters {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 2px 0;
+	position: relative;
+}
+
+.Show-Characters {
+	text-align: center;
+	background: none;
+	border: none;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.About-Characters {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	left: 230%;
+	top: 0%;
+	width: fit-content;
+	cursor: default;
+}
+
+.DetailsContainer {
+	justify-content: center;
+}
+
+.DetailsContainer img {
+	border-radius: 15px;
+}
+
+.Character-Details {
+
+	flex-shrink: 0;
+	text-align: center;
+	background-color: bisque;
+	border-radius: 25px;
+	border: 3px solid #c2c5c0;
+	margin-bottom: 20px;
+
+}
+
+.no_info_container {
+	margin-left: 20px;
+	text-align: center;
+	border: 2px solid #3e3f3d;
+	background-color: bisque;
+	border-radius: 25px;
+}
+
+.no_info_container img {
+	width: 300px;
+}
+
+.Character-Episode-List {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	flex-shrink: 0;
+	height: 300px;
+	max-width: 300px;
+	background-color: bisque;
+	border-radius: 5px;
+	border: 3px solid #c2c5c0;
+}
+
+.Character-Episodes {
+	flex-direction: column;
+	flex-shrink: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+.Episodes {
+	font-weight: bold;
+	margin-bottom: 25px;
+	position: relative;
+	left: 20%;
+}
+
+.hide {
+	display: none;
+}
